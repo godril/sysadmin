@@ -9,7 +9,8 @@ The CentOS packages for the various dependencies are installed along with a wrap
 
 This guide builds a server using the [CentOS 7 Minimal ISO](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1511.iso). Once you have that installed on a server (or virtual machine), it is time to setup the host. Some of the commands below are optional (and noted as such) - check whether you need to run them first.
 
-Please remember to replace 'ip.add.re.ss' with your server's actual IP address (not localhost either).
+!!! note
+    Please remember to replace 'ip.add.re.ss' with your server's actual IP address (not localhost either).
 
 ```bash
 # Install updates
