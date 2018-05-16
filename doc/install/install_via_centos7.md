@@ -532,10 +532,10 @@ If creating the first account fails, or you see the following in `/var/log/bigco
 
 This was caused by a CentOS update to the `js` package from `1.8.5-19` to `-20`.
 
-You can downgrade by finding the `-19` RPM and issuing:
+2600Hz is hosting the `-19` version now; if you've installed `-20` you'll need to downgrade:
 
 ```shell
-yum downgrade ftp://ftp.pbone.net/mirror/ftp.centos.org/7.4.1708/os/x86_64/Packages/js-1.8.5-19.el7.x86_64.rpm
+yum downgrade js-1:1.8.5-19.el7.x86_64
 ```
 
 See the [CouchDB issue](https://github.com/apache/couchdb/issues/1293) if you want more info.
