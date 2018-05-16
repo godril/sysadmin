@@ -1,4 +1,4 @@
-# Installation Guide for Centos 7
+# Installation Guide for CentOS 7
 
 This is a reference guide for installing all of the necessary components for Kazoo. Once you have completed this guide, you should have an all-in-one installation of Kazoo complete and ready to configure for use.
 
@@ -6,7 +6,7 @@ The CentOS packages for the various dependencies are installed along with a wrap
 
 ## A living guide
 
-This guide is an attempt to make installing all the various components straigtforward to get a working All-in-One Kazoo installation for testing purposes. However, packages are updated in the CentOS repos, new versions of Kazoo get released, and other things that can cause this guide to bitrot.
+This guide is an attempt to make installing all the various components straightforward to get a working All-in-One Kazoo installation for testing purposes. However, packages are updated in the CentOS repos, new versions of Kazoo get released, and other things that can cause this guide to bitrot.
 
 We need your help to keep this up to date by:
 
@@ -244,7 +244,7 @@ listen haproxy-stats 127.0.0.1:22002
 
 # Enable and start HAProxy
 systemctl enable kazoo-haproxy
-osystemctl start kazoo-haproxy
+systemctl start kazoo-haproxy
 
 # Check the status of haproxy
 kazoo-haproxy status
@@ -289,12 +289,12 @@ sup kazoo_media_maintenance import_prompts /opt/kazoo/sounds/en/us/
 # If you need to import other languages (optional)
 # sup kazoo_media_maintenance import_prompts /opt/kazoo/sounds/fr/ca fr-ca
 
-# It can be a good idea to run a refresh over the installed databases - there are sporadic reports of partial installtions hanging at this point
+# It can be a good idea to run a refresh over the installed databases - there are sporadic reports of partial installations hanging at this point
 sup kapps_maintenance refresh
 <10016.9661.0> (22/22) refreshing database 'system_config'
 ...
 
-# Create the admin account, remember to replace the branced fields
+# Create the admin account, remember to replace the braced fields
 # Example: To create an account with the username root, replace {ADMIN_USER} with root
 sup crossbar_maintenance create_account \
 {ACCOUNT_NAME} \
