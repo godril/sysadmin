@@ -13,7 +13,7 @@ We'll use [Let's Encrypt](https://letsencrypt.org/) to generate a free SSL certi
 
 ```bash
 # First, get the script from EFF
-sudo wget -O /usr/local/sbin https://dl.eff.org/certbot-auto
+sudo wget -O /usr/local/sbin/certbot-auto https://dl.eff.org/certbot-auto
 
 # Make it executable
 sudo chmod a+x /usr/local/sbin/certbot-auto
